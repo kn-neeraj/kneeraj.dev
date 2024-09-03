@@ -1,0 +1,9 @@
+# Site settings
+baseurl: ""
+# Using a protocol-relative URL to support both HTTP and HTTPS
+url: "//kneeraj.dev"
+
+# You can uncomment and modify the following line once HTTPS is confirmed to be working
+# url: "https://kneeraj.dev"
+
+# Other Jekyll settings can be added here as needed
