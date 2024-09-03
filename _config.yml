@@ -18,6 +18,7 @@ description: >-
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-sass-converter
 
 # Custom variables
 github_username: kn-neeraj
