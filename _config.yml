@@ -7,3 +7,31 @@ url: "//kneeraj.dev"
 # url: "https://kneeraj.dev"
 
 # Other Jekyll settings can be added here as needed
+
+title: The Prompt Gallery
+email: kn.neeraj.2809@gmail.com
+description: >-
+  The Prompt Gallery Chrome extension helps you manage and use your favorite prompts
+  for AI chatbots like ChatGPT and Claude.
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+
+# Custom variables
+github_username: kn-neeraj
+product_name: The Prompt Gallery
+
+# Footer links
+footer_links:
+  product:
+    - name: Video Tour
+      url: /#
+    - name: Try Now
+      url: /#
+  company:
+    - name: Privacy Policy
+      url: /privacy-policy
+  connect:
+    email: kn.neeraj.2809@gmail.com

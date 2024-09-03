@@ -1,0 +1,30 @@
+<footer class="site-footer h-card">
+    <div class="wrapper">
+      <div class="footer-col-wrapper">
+        <div class="footer-col">
+          <h2 class="footer-heading">Product</h2>
+          <ul class="footer-links">
+            {% for link in site.footer_links.product %}
+            <li><a href="{{ link.url | relative_url }}">{{ link.name }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+  
+        <div class="footer-col">
+          <h2 class="footer-heading">Company</h2>
+          <ul class="footer-links">
+            {% for link in site.footer_links.company %}
+            <li><a href="{{ link.url | relative_url }}">{{ link.name }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+  
+        <div class="footer-col">
+          <h2 class="footer-heading">Connect</h2>
+          <ul class="footer-links">
+            <li>Email: <a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
