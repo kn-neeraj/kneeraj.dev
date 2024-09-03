@@ -3,78 +3,132 @@
 
 @import "minima";
 
-/* Custom styles */
+/* Base and Typography Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Unified font style */
+    background: #fff;
+    color: #333;
+    text-align: center; /* Center aligns all text by default */
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto; /* Centers the container */
+    padding: 0 20px; /* Padding on the sides for some breathing room */
+    text-align: left; /* Aligns text to the left within containers */
+}
+
+/* Header Styles */
+.site-header {
+    background: #f8f9fa;
+    padding: 1rem 0; /* Padding top and bottom for the header */
+    border-bottom: 1px solid #ccc;
+    text-align: center; /* Centers text in the header */
+}
+
+/* Hero Section */
 .hero {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 4rem 0;
+    padding: 4rem 0; /* Increased vertical padding for more visual impact */
+    background: #fff; /* Differentiates the hero section with a background */
 }
 
 .hero-content {
-  flex: 1;
-}
-
-.hero-image {
-  flex: 1;
-  text-align: right;
-}
-
-.hero-image img {
-  max-width: 100%;
-  height: auto;
+    margin: 0 auto; /* Centers hero content and provides space from other elements */
+    max-width: 800px; /* Limits the width of the hero content for better readability */
 }
 
 .hero-title {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+    font-size: 2.5rem; /* Larger font size for prominence */
+    color: #333;
+    margin-bottom: 1rem; /* Space below the title */
+    font-weight: bold;
 }
 
 .hero-subtitle {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
+    font-size: 1.5rem;
+    color: #2b2b2b;
+    margin-bottom: 2rem; /* More space below the subtitle */
 }
 
-.button {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  margin-right: 1rem;
-  text-decoration: none;
-  border-radius: 4px;
-  font-weight: bold;
+.hero-buttons {
+    margin: 1rem 0; /* Margin around buttons for clear separation */
+    text-align: center; /* Ensures buttons are centered */
 }
 
-.button-primary {
-  background-color: #0366d6;
-  color: white;
+/* Button Styles */
+a.button {
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 0 10px;
+    display: inline-block;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effects */
+    border: 2px solid transparent; /* Ensures button size remains consistent */
+    cursor: pointer; /* Cursor indicates the element is clickable */
+    color: #fff;
 }
 
+a.button-primary {
+    color: #fff; /* White text color */
+    background-color: #007bff; /* Blue background */
+    border-color: #007bff; /* Blue border, not necessary unless for hover state */
+    
+    &:hover {
+        background-color: darken(#007bff, 10%); /* Darken on hover for feedback */
+    }
+}
+
+a.button-outline {
+    color: #333; /* Blue text color matching the primary button background */
+    background-color: transparent; /* No background color */
+    border-color: #c6c7c8; /* Blue border to match the primary button background */
+
+    &:hover {
+        background-color: #b2b4b4; /* Fill background on hover */
+        color: #333; /* White text color on hover */
+    }
+}
+
+/* Mailing List Styles */
 .mailing-list {
-  background-color: #f6f8fa;
-  padding: 2rem;
-  text-align: center;
-  margin: 2rem 0;
+    background-color: #f6f8fa;
+    padding: 2rem; /* Consistent padding for visual balance */
+    margin-top: 2rem; /* Separates mailing list from content above */
+    text-align: center;
+}
+
+/* Footer Styles */
+.site-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem 0; /* Padding top and bottom */
+    text-align: center;
 }
 
 .footer-col-wrapper {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto; /* Centers footer columns */
+    max-width: 1140px; /* Matches container width */
+    padding: 0 20px; /* Padding inside the footer */
 }
 
 .footer-col {
-  flex: 1;
+    flex: 1;
+    padding: 0 15px; /* Padding inside each footer column */
 }
 
 @media screen and (max-width: 600px) {
-  .hero {
-    flex-direction: column;
-  }
-  
-  .hero-image {
-    margin-top: 2rem;
-  }
-  
-  .footer-col-wrapper {
-    flex-direction: column;
-  }
+    .hero, .footer-col-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content, .hero-image, .footer-col {
+        width: 100%; /* Full width for mobile compatibility */
+        padding: 0;
+    }
 }

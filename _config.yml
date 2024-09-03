@@ -9,10 +9,11 @@ url: "//kneeraj.dev"
 # Other Jekyll settings can be added here as needed
 
 title: The Prompt Gallery
+header: Access your prompt templates in Chatgpt & Claude
 email: kn.neeraj.2809@gmail.com
 description: >-
-  The Prompt Gallery Chrome extension helps you manage and use your favorite prompts
-  for AI chatbots like ChatGPT and Claude.
+  The Prompt Gallery Chrome extension helps you manage and use your favorite prompt templates
+  within AI chatbots like ChatGPT and Claude with a single click.
 
 # Build settings
 theme: minima
