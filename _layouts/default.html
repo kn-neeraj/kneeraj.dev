@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title | default: "Your Site Title" }}</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/icon16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/icon32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="/assets/images/icon48.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="/assets/images/icon128.png">
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
     {% include header.html %}
-    
+
     <div class="content-wrapper {{ page.title | slugify }}">
         {{ content }}
     </div>

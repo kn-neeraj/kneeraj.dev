@@ -32,6 +32,18 @@ body, html {
     font-size: 0.8rem;        /* Reduces the font size; adjust as necessary */
 }
 
+.header-link {
+    color: inherit !important;            /* Inherits the text color from the parent element */
+    text-decoration: none;     /* Removes underline from links */
+    font-weight: inherit;      /* Inherits the font weight from the parent element */
+    background-color: transparent; /* Ensures no background color change on hover */
+}
+
+.header-link:hover, .header-link:focus {
+    color: inherit !important;            /* Keeps the color the same on hover and focus */
+    // text-decoration: none;     /* Ensures no underline appears on hover or focus */
+}
+
 /* Hero Section */
 .hero {
     padding: 4rem 0; /* Increased vertical padding for more visual impact */
@@ -177,4 +189,6 @@ a.button-outline {
 // Privacy policy
 .privacy-policy {
     text-align: left;  /* Ensures all text in the privacy policy is left-aligned */
+    margin-left: 0.5rem;
+
 }
