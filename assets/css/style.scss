@@ -17,15 +17,19 @@ body, html {
     max-width: 1140px;
     margin: 0 auto; /* Centers the container */
     padding: 0 20px; /* Padding on the sides for some breathing room */
-    text-align: left; /* Aligns text to the left within containers */
+    text-align: center; /* Aligns text to the left within containers */
 }
 
 /* Header Styles */
 .site-header {
     background: #f8f9fa;
-    padding: 1rem 0; /* Padding top and bottom for the header */
+    padding: 0.25rem 0; /* Padding top and bottom for the header */
     border-bottom: 1px solid #ccc;
     text-align: center; /* Centers text in the header */
+    position: sticky;         /* Makes the header sticky */
+    top: 0;                   /* Ensures it sticks to the top of the page */
+    z-index: 1000;            /* Ensures it stays above other content */
+    font-size: 0.8rem;        /* Reduces the font size; adjust as necessary */
 }
 
 /* Hero Section */
@@ -120,6 +124,24 @@ a.button-outline {
     flex: 1;
     padding: 0 15px; /* Padding inside each footer column */
 }
+
+/* Hero Image Container */
+.hero-image {
+    text-align: center; // Ensures the image is centered
+    margin: 20px 0; // Adds some space around the image
+    // box-shadow: 0 4px 8px rgba(0,0,0,0.1); // Adds subtle shadow for depth
+    padding: 20px; // Padding around the image within the container
+    background: #fff; // Optional: a light background can make the shadow stand out
+    border-radius: 8px; // Optional: adds rounded corners to the container
+}
+
+/* Image Style */
+.hero-image img {
+    max-width: 100%; // Ensures the image is responsive and fits the container
+    height: auto; // Maintains the aspect ratio of the image
+    border-radius: 4px; // Optional: adds rounded corners to the image itself
+}
+
 
 @media screen and (max-width: 600px) {
     .hero, .footer-col-wrapper {
