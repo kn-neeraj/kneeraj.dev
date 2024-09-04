@@ -2,7 +2,7 @@
 layout: home
 ---
 
-## Welcome to The Prompt Gallery abc
+## Welcome to The Prompt Gallery
 
 The Prompt Gallery is a Chrome extension designed to help you manage and use your favorite prompts for AI chatbots like ChatGPT and Claude. With this tool, you can:
 
