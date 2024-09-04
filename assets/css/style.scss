@@ -184,6 +184,20 @@ a.button-outline {
         width: 100%; /* Full width for mobile compatibility */
         padding: 0;
     }
+
+    .hero-buttons a.button {
+        display: block; /* Stack buttons vertically on smaller screens */
+        margin-bottom: 10px; /* Add margin for spacing between buttons */
+        width: auto; /* Full width for mobile compatibility */
+    }
+
+    .footer ul {
+        display: block; /* Stack list items vertically */
+        text-align: center; /* Center-align the text */
+    }
+    .footer ul li {
+        margin-bottom: 10px; /* Adds vertical space between each item */
+    }
 }
 
 // Privacy policy
